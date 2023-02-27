@@ -1,6 +1,6 @@
 const DOMSelectors = {
   button: document.getElementById("btn"),
-  box: document.getElementById("card"),
+  card: document.getElementById("api-response"),
   input: document.getElementById("Searchinput"),
 };
 
