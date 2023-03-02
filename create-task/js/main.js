@@ -1,7 +1,5 @@
-import "./style.css";
-import { DOMSelectors } from "./dom";
-
-let url = "https://goweather.herokuapp.com/weather/";
+import "../styles/style.css";
+import { DOMSelectors } from "./DOM";
 
 /* async function fetchData(url) {
   const response = await fetch(url);
