@@ -1,4 +1,3 @@
-import "../styles/style.css";
 import { DOMSelectors } from "./DOM";
 
 /* async function fetchData(url) {
@@ -39,3 +38,5 @@ function insertHTML() {
 function clearInput() {
   DOMSelectors.input.innerHTML = "";
 }
+
+console.log(clearInput);
