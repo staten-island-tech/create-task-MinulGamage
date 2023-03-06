@@ -28,5 +28,8 @@ DOMSelectors.button.addEventListener("click", function (event) {
         </div>`
       );
     })
-    .catch((error) => console.error(error));
+    .catch(
+      (error) =>
+        (DOMSelectors.card.innerHTML = `<h3> Cannot find the region you are looking for. Try checking spelling</h3>`)
+    );
 });
