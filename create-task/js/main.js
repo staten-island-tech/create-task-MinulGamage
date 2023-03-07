@@ -1,12 +1,12 @@
-import { DOMSelectors } from "./DOM";
+/* import { DOMSelectors } from "./DOM";
 
-/* async function fetchData(url) {
+async function fetchData(url) {
   const response = await fetch(url);
   const object = await response.json();
   const Data = object.message;
   const temperature = Object.keys(Data);
   console.log(temperature);
-} */
+}
 DOMSelectors.button.addEventListener("click", async function fetchData(event) {
   try {
     let x = DOMSelectors.input.value.toLowerCase();
@@ -40,3 +40,4 @@ function clearInput() {
 }
 
 console.log(clearInput);
+ */

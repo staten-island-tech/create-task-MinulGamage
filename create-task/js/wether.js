@@ -1,4 +1,5 @@
 import { DOMSelectors } from "./DOM";
+import "../styles/style.css";
 
 const url = "https://goweather.herokuapp.com/weather/";
 
@@ -19,7 +20,7 @@ DOMSelectors.button.addEventListener("click", function (event) {
     .then((response) => response.json())
     .then((data) => {
       DOMSelectors.card.insertAdjacentHTML(
-        "beforeend",
+        "afterbegin",
         `
         <div class="card" id="api-response">
         <h2>Weather in ${DOMSelectors.input.value} is ${data.description}</h2>

@@ -8,10 +8,13 @@
   </head>
   <body>
     <div class="headerDIV">
-      <h1 class="header">Whalen Weather</h1>
+      <h1 class="header">Quick Weather</h1>
     </div>
-
-    <div class="input" id="InputDIV">
+    <h3 class="disclaimer">
+      API may take a minute to start up During first use. Please be patient if
+      your region cannot be found yet and try again soon.
+    </h3>
+    <div class="InputDIV" id="input">
       <form>
         <input
           type="text"
@@ -23,7 +26,7 @@
       </form>
     </div>
 
-    <div id="api-response"></div>
+    <div class="CardDIV" id="api-response"></div>
 
     <script type="module" src="/js/wether.js"></script>
   </body>
