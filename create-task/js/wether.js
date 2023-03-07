@@ -28,6 +28,7 @@ DOMSelectors.button.addEventListener("click", function (event) {
         <h3>Wind Speed: ${data.wind}</h3>
         <h3> Forecast: ${data.forecast}</h3>
         <button id="remove">Remove Card</button>
+        <button id="change">Change Degrees F/C</button>
         </div>`
       );
     })
@@ -35,4 +36,10 @@ DOMSelectors.button.addEventListener("click", function (event) {
       (error) =>
         (DOMSelectors.card.innerHTML = `<h3> Cannot find the region you are looking for. Try checking spelling</h3>`)
     );
+
+  function clearInput() {
+    DOMSelectors.input.innerHTML = "";
+    return clearInput;
+  }
+  clearInput();
 });
