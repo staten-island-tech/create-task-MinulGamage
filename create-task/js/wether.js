@@ -25,6 +25,8 @@ DOMSelectors.button.addEventListener("click", function (event) {
         <h2>Weather in ${DOMSelectors.input.value} is ${data.description}</h2>
         <h3>Temperature: ${data.temperature}</h3>
         <h3>Wind Speed: ${data.wind}</h3>
+        <h3> Forecast: ${data.forecast}</h3>
+        <button id="remove">Remove Card</button>
         </div>`
       );
     })
