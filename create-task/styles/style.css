@@ -66,3 +66,7 @@ background-color: var(--);
   font-size: 2rem;
   text-align: center;
 }
+
+.temperature {
+  font-size: 4rem;
+}
