@@ -29,7 +29,6 @@ DOMSelectors.button.addEventListener("click", function (event) {
         <h2 class="description">Weather in ${DOMSelectors.input.value} is ${data.description}</h2>
         <h3 class="temperature"> ${data.temperature}</h3>
         <h3 class= "wind">Wind Speed: ${data.wind}</h3>
-        <h3 class="forecast"> Forecast: ${data.forecast}</h3>
         <button id="change">Change Degrees F/C</button>
         </div>`
       );
@@ -37,7 +36,7 @@ DOMSelectors.button.addEventListener("click", function (event) {
     })
     .catch(
       (error) =>
-        (DOMSelectors.card.innerHTML = `<h3> Cannot find the region you are looking for. Try checking spelling</h3>`)
+        (DOMSelectors.card.innerHTML = `<h3> Either API is in maintence or cannot find the region you are looking for. Try checking spelling</h3>`)
     );
 
   function clearInput() {
