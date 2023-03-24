@@ -21,6 +21,7 @@ DOMSelectors.button.addEventListener("click", function (event) {
   fetch(cityUrl)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       removeCards();
       DOMSelectors.card.insertAdjacentHTML(
         "afterbegin",
